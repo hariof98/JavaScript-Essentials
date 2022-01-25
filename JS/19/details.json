@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Hari",
+        "age": 23,
+        "Degree": "BE.CSE",
+        "isDeveloper": true
+    },                                 
+    {
+        "name": "Hari",
+        "age": 23,
+        "Degree": "BE.CSE",
+        "isDeveloper": true
+    }
+]

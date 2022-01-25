@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="closures.js" defer></script>
+    <!-- <script src="dataHiding.js" defer></script> -->
+    <title>Closures</title>
+  </head>
+  <style>
+    .button-increment {
+      margin: 50px;
+      padding: 50px;
+      cursor: pointer;
+      background-color: teal;
+      border-radius: 50px;
+      color: white;
+      border: none;
+    }
+    .button-decrement {
+      margin: 50px;
+      padding: 50px;
+      cursor: pointer;
+      background-color: #ff0000;
+      color: white;
+      border: none;
+      border-radius: 50px;
+    }
+  </style>
+  <body>
+    <button class="button-increment" onclick="myCountdown.increment();">
+      Increase
+    </button>
+    <button class="button-decrement" onclick="myCountdown.decrement();">
+      Decrease
+    </button>
+    <h4></h4>
+  </body>
+</html>

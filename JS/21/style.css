@@ -1,0 +1,12 @@
+.grandparent{
+    background-color: red;
+    flex-direction: column;
+}
+
+.parent{
+    position: absolute;
+    background-color: rgb(43, 226, 73);
+    padding: 100px;
+    width: 150px;
+    margin-left: 30px;
+}

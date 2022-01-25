@@ -1,0 +1,21 @@
+button {
+  background-color: tomato;
+  margin: 100px;
+  padding: 50px;
+  border: none;
+  border-radius: 80px;
+  font-size: xx-large;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+.myButton {
+  background-color: chartreuse;
+}
+
+.increase {
+  background-color: bisque;
+}
+
+.oddEven {
+  background-color: darkgoldenrod;
+}
