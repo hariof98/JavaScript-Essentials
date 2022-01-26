@@ -58,7 +58,7 @@ console.log(Children);
 
 const childs    = document.querySelector('.child2');  // defining child
 const parents   = childs.parentElement;               // .parentElement or .parentNode property is used to access the parent element of the given child element
-const myparents = parents.style.backgroundColor="grey";
+parents.style.backgroundColor="green";
 console.log(parents);
 
 const gParents = parents.parentElement;
