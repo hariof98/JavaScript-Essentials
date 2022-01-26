@@ -43,3 +43,32 @@ myqSelectorAll.forEach(list=>list.style.backgroundColor="yellow");
 
 const myqSelectorAll2 = document.querySelectorAll('.parent2');
 myqSelectorAll2.forEach(list => list.style.backgroundColor="blue");
+
+
+
+/*-------------------------------------------- selecting child --------------------------------------------------*/
+
+const grandParents = document.querySelector('#grandparent-1');  // defining parent
+const Children     = Array.from(grandParents.children);         // .children is used to access the child elements 
+const myChi        = Children[0].style.backgroundColor="green";
+console.log(Children);
+
+/*-------------------------------------------- selecting parent --------------------------------------------------*/
+/*-------------------------------------------- traversing tree upwards starts ------------------------------------*/
+
+const childs    = document.querySelector('.child2');  // defining child
+const parents   = childs.parentElement;               // .parentElement or .parentNode property is used to access the parent element of the given child element
+const myparents = parents.style.backgroundColor="grey";
+console.log(parents);
+
+const gParents = parents.parentElement;
+console.log(gParents);
+
+// Using .parentElement or parentNode we can move up the tree one parent at a time
+
+// If we dont want to go up one by one, we can use the method closest() to go to the near specified element
+
+const childs2  = document.querySelector('.child2');   //childs2.parentElement.style.backgroundColor="blue";
+const closeParent = childs2.closest('.grandparent');
+console.log(closeParent);
+closeParent.style.backgroundColor="darkgrey";

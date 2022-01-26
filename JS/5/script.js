@@ -33,6 +33,8 @@ const names = `
 
 document.body.innerHTML = names;
 
+/* Refer Folder 21 for better understanding of DOM Traversal */
+
 // querySelectors in JS uses CSS queries
 // The querySelector() method returns the first element that matches a specified CSS selector(s) in the document, or null is returned if there are no matches.
 // querySelector() method can only be used to access a single element while 
