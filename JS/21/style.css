@@ -1,12 +1,74 @@
+h1{
+    color: #a52a90;
+}
+
 .grandparent{
-    background-color: red;
-    flex-direction: column;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    padding: 300px;
+    background-color: rgb(43, 122, 226);
+    top: 15%;
+    left: 30%;
+    margin: -25px 0 0 -25px; 
 }
 
 .parent{
     position: absolute;
-    background-color: rgb(43, 226, 73);
+    height: 100px;
+    width: 480px;
     padding: 100px;
-    width: 150px;
-    margin-left: 30px;
+    background-color: rgb(226, 198, 43);
+    top: 10px;
+    left: 12px;
+}
+
+.parent2{
+    position: absolute;
+    height: 100px;
+    width: 480px;
+    padding: 100px;
+    background-color: rgb(226, 198, 43);
+    bottom: 10px;
+    left: 12px;
+}
+
+.child1{
+    position: absolute;
+    height: 140px;
+    width: 25%;
+    padding: 20px;
+    background-color: red;
+    top: 18%;
+    left: 10%;
+}
+
+.child2{
+    position: absolute;
+    height: 140px;
+    width: 25%;
+    padding: 20px;
+    background-color: red;
+    top: 18%;
+    right: 10%;
+}
+
+.child3{
+    position: absolute;
+    height: 140px;
+    width: 25%;
+    padding: 20px;
+    background-color: red;
+    bottom: 18%;
+    left: 10%;
+}
+
+.child4{
+    position: absolute;
+    height: 140px;
+    width: 25%;
+    padding: 20px;
+    background-color: red;
+    bottom: 18%;
+    right: 10%;
 }
