@@ -19,6 +19,8 @@ const myName = new Name(
     "dfg"
 )
 
+console.log(myName);
+
 const names = ` 
     <body>
     <div class="container">

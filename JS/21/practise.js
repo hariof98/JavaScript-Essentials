@@ -13,7 +13,14 @@ const c = b.children[1];
 const d = c.style.backgroundColor="black";
 console.log(c);
 
-
+/*
+const grandParents = document.querySelector('#grandparent-1');  
+const Children     = grandParents.children;          
+const myChi        = Children;
+const my1          = myChi[1];
+const my2          = myChi[1].children;
+console.log(my2);
+*/
 
 
 const a = Array.from(document.querySelectorAll('.grandparent'));
