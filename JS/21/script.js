@@ -53,6 +53,14 @@ const Children     = Array.from(grandParents.children);         // .children is 
 const myChi        = Children[0].style.backgroundColor="green";
 console.log(Children);
 
+const check = document.querySelector('#grandparent-1');
+const check2 = Array.from(check.children);
+console.log(check2);
+console.log(check2[0].children);   
+/* or */ 
+console.log(Array.from(check2[0].children));
+
+
 /*-------------------------------------------- selecting parent --------------------------------------------------*/
 /*-------------------------------------------- traversing tree upwards starts ------------------------------------*/
 

@@ -32,3 +32,20 @@ console.log(d);
 
 
 /* setTimeout, Promises, fetch.... are all Asynchronous in JavaScript */
+
+
+
+/* Guess the output for below */
+var a = 10;
+console.log(a);
+var b = 20;
+console.log(b);
+var c = 30;
+console.log(c);
+var d = 70;
+setTimeout(() => {
+    console.log(d);
+}, 3000)
+var d = 100;
+var e = 50;
+console.log(e);
