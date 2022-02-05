@@ -36,16 +36,16 @@ console.log(d);
 
 
 /* Guess the output for below */
-var a = 10;
-console.log(a);
-var b = 20;
-console.log(b);
-var c = 30;
-console.log(c);
-var d = 70;
+var a1 = 10;
+console.log(a1);
+var b1 = 20;
+console.log(b1);
+var c1 = 30;
+console.log(c1);
+var d1 = 70;
 setTimeout(() => {
-    console.log(d);
+    console.log(d1);
 }, 3000)
-var d = 100;
-var e = 50;
-console.log(e);
+var d1 = 100;
+var e1 = 50;
+console.log(e1);

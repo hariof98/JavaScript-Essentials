@@ -35,3 +35,20 @@ console.log(b1);
 
 /* Note: 1. In querySelector and querySelectorAll we need to specify whether the given css query is a class or id
          2. In getElementById and getElementsByClassName we dont need to specify */
+
+
+
+
+/* PS CHECK THIS */
+
+/* Array.from() and forEach  -- understand its usage better and when and why */
+
+
+const a = Array.from(document.querySelector('.parent2').children);
+console.log(a);
+a.style.backgroundColor="green";
+
+
+const b = Array.from(document.querySelector('.parent2').children);
+console.log(b);
+b[0].style.backgroundColor="green";

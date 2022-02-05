@@ -57,7 +57,7 @@ const check = document.querySelector('#grandparent-1');
 const check2 = Array.from(check.children);
 console.log(check2);
 console.log(check2[0].children);   
-/* or */ 
+/* or as array */ 
 console.log(Array.from(check2[0].children));
 
 
