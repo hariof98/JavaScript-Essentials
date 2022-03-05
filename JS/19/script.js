@@ -26,7 +26,7 @@ var myJsonObject = [
 console.log(myJsonObject);
 console.log(myJsonObject[1]);
 
-// But JSON data will not come as array of objects, it will come as string only. So we need to parse it.
+// But JSON data will not come as array of objects, it will come as string only. So we need to parse (decode) it.
 
 var myOrigJsonObj = `[
     {
@@ -44,9 +44,10 @@ var myOrigJsonObj = `[
 ]`
 
 console.log(JSON.parse(myOrigJsonObj));
-// JSON.parse() to convert text into a JavaScript object
+// JSON.parse() to convert string into a JavaScript object
 
-
+// JSON encode means converting json into string
+// JSON decode means converting string back to object
 
 /*---------------------------------------------------------------------------------------------------------------*/
 

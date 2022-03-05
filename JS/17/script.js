@@ -4,7 +4,7 @@ console.log(
     mySlicer.slice(2, 4)
 );
 
-/* in slice(2, 4) =>  1 is INCLUSIVE, 4 is EXCLUSIVE. 
+/* in slice(2, 4) =>  2 is INCLUSIVE, 4 is EXCLUSIVE. 
                       It takes the second position value C, since A is 0 and B is 1.
                       E is the 4th value but since its exclusive it will not be considered
    
