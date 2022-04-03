@@ -1,4 +1,4 @@
-//SLICE
+// SLICE
 var mySlicer = ["A", "B", "C", "D", "E", "F", "G"];
 console.log(
     mySlicer.slice(2, 4)
@@ -12,7 +12,7 @@ console.log(
 
 
 
-//SPLICE
+// SPLICE
 var arrSplicer = [["A"], ["B"], ["C"], ["D"], ["E"], ["F"], ["G"]];
 arrSplicer.splice(2, 3)
 console.log(arrSplicer);
@@ -40,4 +40,9 @@ myArray.push("AQW", "HARI", 12);
 myArray.pop();
 console.log(myArray);
 
+var numbers = [1, 2, 3, 4, 5, 6];
+numbers.unshift(7);           // unshift will add element to the starting of the array
+numbers.shift();             // shift will remove the first element of the array 
+
+console.log(numbers);
 
