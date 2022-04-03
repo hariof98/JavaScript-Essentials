@@ -5,10 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="script.js" defer></script>
+    <script src="mutationObserver.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="parent">
+        <div class="class1">Child 1</div>
+        <div class="class2">Child 2</div>
+        <div class="class3">Child 3</div>
+    </div>
 </body>
 </html>
+
+<style>
+    #parent{
+        position: relative;
+        background-color: blueviolet;
+        width: fit-content;
+        padding: 100px;
+        margin: 200px;
+    }
+    .class1, .class2, .class3{
+        display: inline-block;
+        width: 100px;
+        background-color: brown;
+        padding: 100px;
+        text-align: center;
+    }
+</style>

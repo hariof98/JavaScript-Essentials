@@ -28,7 +28,7 @@ console.log(result2);
 // Nested ternary => ( dont use it anywhere....its not advisible!)
 
 // normal flow
-sum = 100;
+var sum = 100;
 var data;
 var data2;
 
