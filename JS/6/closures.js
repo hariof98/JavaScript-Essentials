@@ -16,3 +16,22 @@ function mainParent(){
 // var Myname = mainParent()('hari')();
 // Myname();
 mainParent()('hari')();   // () => mainParent(), ('hari')=> outerZone(c), ()=> innerZone();
+
+
+
+// test
+var inner = 'hari in';
+var outer = 'hari out';
+
+function outerMostFunction() {
+    function innerFunction() {
+        console.log(inner); 
+        function outerFunction() {
+            console.log(outer);
+        }
+        return outerFunction;
+    }
+    return innerFunction;
+}
+
+outerMostFunction()()();
