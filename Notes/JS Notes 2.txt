@@ -1,0 +1,75 @@
+* let, const, arrow functions are all introduced in ES6 (ECMA SCRIPT - 2015) 
+
+===============================================JS - VOL 2===============================================
+
+synchronous 	=> Happening at the same time
+assynchronous 	=> Not happening at the same time
+
+* Promises => It is invented to replace Callback functions. It takes two parameters resolve and reject and it uses new keyword (like constructor) to initialize a new Promise. 
+
+
+* Function Declaration/Function Statement => Declaring normal functions is called as function declaration or statement.
+
+* Function Expression => only in JavaScript, you can assign a function to a variable. So such kinds are called as Function Expression.
+
+* Difference between FE and FS is Hoisting (memory creation in JS). Hoisting works with Function Declaration but it will not work with Function Expression.
+
+* Anonymous Function => Function without a name. We can only use Anonymous Function in case of using Function Expression and we can also use Arrow Function which also represents Anonymous Function.
+
+* First class functions/citizens => When a function is assigned to a variable and assigned a value or passed into another function or when it returns a value.
+
+
+* document.querySelector("body li:first-child").classList   => used to get all the class list available in the specified css query
+	different classList methods = classList.add("class-name"), classList.remove, classList.toggle, classList.replace("old-class", "new-class")
+
+
+* cookies - 4kb, supports html4 and html5, available in all tabs of the browser, expires based on the time set by the user
+  session storage - 5mb, supports html5, available in all tabs of the browser, expires when the session is ended (i.e if the browser tab is closed)
+  local storage - 10mb, supports html5, available in only the current tab, expires when the user deletes it from browser or from the code
+
+
+*  <script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
+   	axios and fetch  works in similar way, the difference is axios is backwards compaitable 
+	axios will get the data in first .then of promise (i.e no need to convert the data to JSON like fetch)
+
+
+* window is the global object of JavaScript engine interms of the web. It is created along with global execution context in all javascript engines when a js code is run.
+	whenever an execution context or global context is created, along with objects, "this" keyword will also be created with it.
+	here interms of global context and web, this === window
+
+
+* Global Space => Anything that is not inside a function in JavaScript is said to be in global space
+
+
+
+
+
+* What happens if you run this code:
+
+	const target = document.querySelector(".first-paragraph");
+	target.style.font-family = "sans-serif";
+
+	"Uncaught SyntaxError: Invalid left-hand side in assignment"
+
+	JavaScript does not allow for hyphens in property names. When targeting CSS properties, use camelCase, so the "font-family" property becomes "fontFamily". 
+
+
+
+
+Data Types:
+		
+	String => represents textual data => 'hello', "hello world!" etc
+			
+	Number => an integer or a floating-point number => 3, 3.234, 3e-2 etc.
+			
+	BigInt => an integer with arbitrary precision => 900719925124740999n , 1n etc.
+			
+	Boolean => Any of two values: true or false => true and false
+			
+	undefined => a data type whose variable is not initialized => let a;
+			
+	null => denotes a null value => let a = null;
+			
+	Symbol => data type whose instances are unique and immutable => let value = Symbol('hello');
+			
+	Object => key-value pairs of collection of data => let student = { };

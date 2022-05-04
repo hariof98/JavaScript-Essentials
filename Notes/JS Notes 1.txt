@@ -1,0 +1,111 @@
+In Settings => formatonsave to TRUE on VS Code is *MUST
+
+Every thing in JavaScript is an Object.
+
+=====================================JS====================================================
+* What is ECMAScript?
+	The specification describing how browsers should implement and interpret JavaScript.
+
+* js should always present in head section of html
+
+* JavaScript is a synchronous single threaded language, single threaded means JS can execute only one command at at time.
+  JavaScript will execute the next line only when the current line finished executing.
+
+* 2 main keywords => async and defer
+	regular flow - parsing of html document will take place, when a js is encountered, 
+			it will go to the script location and get the script contents and executes them and then html parsing will resume. This is called Content or Render Blocking.
+	
+	async - while parsing html, when a js is encountered, it will keep parsing the html file while the js contents are downloading, once when the download is done, 
+			the parsing will be stopped and the js contents will get executed after that parsing will continue. 
+			This shortens the code execution time compared with the regular flow.
+
+	defer - while parsing html, when a js is encountered, it will store the js contents and it will continue to completely parse the html document. Once when the parsing is 
+			completed, the contents in js will execute. 
+
+
+* Class => Class is like a blueprint for a house, you can tell where the bedroom is but you can't tell what's the color of the bedroom
+	   or the furnitures in it. Class is like a holder that holds objects and is values and it does not have or return any values.
+
+* Object => On the other hand, Object is the instance of a class. Object is like the real house, we can tell the color of the
+	    bedroom or the furnitures in it. Object holds values. In JS Objects are dynamic, once when we set a value or propery we can always change them.
+
+
+* arrays  => [1, 2, 3] ["Hello", "World"]
+  objects => {key: value} => {a: "hello", b: "world", c: 31}
+
+
+* Methods => A function defined within an object is called as a Method.
+
+* Constructor => The constructor method is a special method of a class for creating and initializing an object instance of that class.
+		 A function becomes a 'constructor' when it is being called with the New Operator, constructing a new class instance.
+		 An object is an instance of a class.
+		 However, in talking about JavaScript, "instance" can be used informally to mean an object created using a particular constructor function.
+
+* We can only call nested objects in strings to avoid using dot operator.
+
+* this.name => Here name is a property when called with this keyword.
+
+* document.body   => to get the html contents defined inside body tag
+  document.body.innerHtml = nameOfTheConstant      => for injecting new values from JavaScript in existing html web content
+	
+
+* document.write("Hari")	=> writes Hari without new line
+  document.writeln("Hari")	=> creates new line
+
+* querySelector() method can only be used to access a single element while 
+  querySelectorAll() method can be used to access all elements which match with a specified CSS selector. 
+  To return all matches, querySelectorAll has to be used, while to return a single match, querySelector is used.
+
+
+* Define closure
+    In JavaScript, we need closures when a variable which is defined outside the scope and reference is accessed from some inner scope.
+
+    Eg:	
+	function parent() {
+	  var num = 10; 		
+	  function sum() {  
+	     console.log(num);  
+	  }   
+	sum();  
+       }
+       parent();
+
+* Lexical scope means that in a nested group of functions, the inner functions have access to the variables and other resources of their parent scope. 
+  This means that the child's functions are lexically bound to the execution context of their parents. Lexical scope is sometimes also referred to as static scope.
+
+
+* Everything in JS happens inside Execution Context
+	Consider Execution Context as a big container in which the whole JavaScript is executed.
+
+	There are two components in Execution Context,
+
+		1.Memory Component (Variable Environment) - Here variables and functions are stored in Key-Value pairs
+	
+		2.Code Component (Thread of Execution) - Here code will be executed one line at a time
+
+
+* var - function scoped - available anywhere inside a function and outside, Its is a global varaible
+  let and const - block scoped - available only inside a block(like if statement, loop, functions, etc...)
+
+
+* Temporal Dead Zone => When let and const keywords are used and if you are trying to access the variables in let or const even before its declaration (like hoisting), 
+			then we will get a ReferenceError. That means the variables we are trying to access is in Temporal Dead Zone (i.e, not yet declared or not yet found)
+			So the phase between the accessing and declaration of variables in let or const is known as Temporal Dead Zone.
+
+* Avoiding TDZ     => Initialize and Declare at the top of the program.
+
+
+* errorHandling	   => try, catch, finally and throw
+		      try and catch will handle only runtime error. So in order to make try, catch work we need to have a errorless JavaScript Syntax.
+		      code present inside finally will run whatever happens
+
+
+* Everything in JS is an Object
+	JS is a prototype based language.
+	An object's prototype object may also have a prototype object, which it inherits methods and properties from, and so on. 
+	This is often referred to as a prototype chain, and explains why different objects have properties and methods defined on other objects available to them.
+
+	Check in console => className or objectName or functionName.__porto__
+						       functionName._proto__.__proto__  and goes on until it returns null 
+
+
