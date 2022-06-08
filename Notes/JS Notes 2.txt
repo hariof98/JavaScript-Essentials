@@ -73,3 +73,50 @@ Data Types:
 	Symbol => data type whose instances are unique and immutable => let value = Symbol('hello');
 			
 	Object => key-value pairs of collection of data => let student = { };
+	
+	
+	
+	
+//Primitive Types
+/*
+	
+  1. String, Boolean, Integer, etc,. are Primitive Types
+	2. Primitive Types are stored in stack in memory
+  3. Fast access and limited storage
+  4. Elements are stored on top of one another
+
+*/
+
+var name = 'hari';
+console.log(name);
+
+var secondName = name;
+console.log(secondName)
+
+name = 'pizza';
+console.log(secondName);
+
+
+// Reference Types
+/* 
+	
+  1. Objects and Arrays in JS are Reference Types 
+  2. They are stored in Heap
+  3. Slow access and large storage
+  4. Two different objects, then two different places in the heap
+  5. In case if we use old object in new variable, then we are referncing it via Pointer
+  
+*/
+
+var person = {
+	name: 'Max',
+  age: 23,
+  team: 'United'
+};
+console.log(person);
+
+var secondPerson = person;
+console.log(secondPerson);
+
+person.name = 'Chris';
+console.log(secondPerson);
