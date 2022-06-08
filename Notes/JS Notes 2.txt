@@ -81,7 +81,7 @@ Data Types:
 /*
 	
   1. String, Boolean, Integer, etc,. are Primitive Types
-	2. Primitive Types are stored in stack in memory
+  2. Primitive Types are stored in stack in memory
   3. Fast access and limited storage
   4. Elements are stored on top of one another
 
