@@ -109,7 +109,7 @@ console.log(secondName);
 */
 
 var person = {
-	name: 'Max',
+  name: 'Max',
   age: 23,
   team: 'United'
 };
