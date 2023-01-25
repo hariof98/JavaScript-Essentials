@@ -73,6 +73,7 @@ Every thing in JavaScript is an Object.
 * Lexical scope means that in a nested group of functions, the inner functions have access to the variables and other resources of their parent scope. 
   This means that the child's functions are lexically bound to the execution context of their parents. Lexical scope is sometimes also referred to as static scope.
 
+* Scope Chain - It's a process of finding refernces of functions, variables, etc, in lexical environment(parent refernces).
 
 * Everything in JS happens inside Execution Context
 	Consider Execution Context as a big container in which the whole JavaScript is executed.
